@@ -1,15 +1,23 @@
 @charset "iso-8859-1";
 /* CSS Document */
 
-table{
+table
+{
 	background-color: transparent;
 	border:2px solid #000;
 	border-collapse: collapse;
 }
-table tbody{
+table tbody
+{
 	
 }
-table tbody tr td{
+table tbody tr th
+{
+width: 2em;
+height: 2em;
+}
+table tbody tr td
+{
 	height:50px;
 	width:50px;
 	border:1px solid #000;
