@@ -15,6 +15,7 @@ table tbody tr th
 {
 width: 2em;
 height: 2em;
+border-radius: 20px
 }
 table tbody tr td
 {

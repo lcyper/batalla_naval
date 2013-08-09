@@ -13,15 +13,18 @@ var alto_mapa= new Array('a','b','c','d','e','f','g','h','i','j');
 //var alto_mapa_b= new Array(10)
 
 // esto recorre la tabla hay que darle buen uso
+function reset(a,b){
 var tablero= new Array();
-for (var i = 0; i < ancho_mapa.length; i++) {
-	for (var d = 0; d < alto_mapa.length; d++) {
+for (var i = 0; i < ancho_mapa.length; i++)
+ {
+	for (var d = 0; d < alto_mapa.length; d++) 
+	{
 		//console.log(alto_mapa[i]+ancho_mapa[d])
 		ayb=alto_mapa[i]+ancho_mapa[d];
-		tablero[ayb,0]
-		console.log(tablero[ayb,0])
-	};
-	
+		tablero[ayb]=0;
+		console.log(tablero[ayb])
+		}
+	}
 };
 
 /*
@@ -34,10 +37,13 @@ for (var i = 0; i < ancho_mapa.length; i++) {
 */
 function toque(a,b){
 c=a+b;
-
-console.log(c)
-//alert(c);
 document.getElementById(c).style.backgroundColor="red";
+//console.log(c);
+//console.log(tablero[c]);
+if (tablero[c]==1) {
+		document.getElementById(c).style.backgroundColor="black";
+	};
+tablero[c]=1;
 }
 
 //tocado
