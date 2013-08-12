@@ -15,11 +15,22 @@ table tbody tr th
 {
 width: 2em;
 height: 2em;
-border-radius: 20px
+/*border-radius: 20px*/
 }
 table tbody tr td
 {
+	background: #10A7FC;
 	height:50px;
 	width:50px;
 	border:1px solid #000;
 }
+buttom{
+	padding: 10px;
+	display: inline-block;
+	background: #62C5F3;
+	cursor: pointer;
+
+}
+#reset{}
+#barcos{}
+#go{}
