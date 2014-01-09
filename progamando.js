@@ -48,22 +48,26 @@ for (var i = 0; i < ancho_mapa.length; i++) {
 //var id='';
 function toque(a,b){
 c=a+b;
-document.getElementById(c).style.backgroundColor='#524D4D';
+document.getElementById(c).style.backgroundColor='rgb(28, 67, 221)';
 	if (tablero[c]==0) {tablero[c]=1;
 			//document.getElementById(c).style.background='#EB1515';
-		}else if (tablero[c]==1) {tablero[c]=0; 
-		document.getElementById(c).style.background='#10A7FC';
-	document.getElementById(c).style.background='#EB1515';}
+		}
+// else if (tablero[c]==1) {tablero[c]=0; 
+// 		document.getElementById(c).style.background='#10A7FC';
+// 	// document.getElementById(c).style.background='#EB1515';
+// }
 	else if (tablero[c]==2){  
-		document.getElementById(c).style.background='#1C2BD5';}
+		document.getElementById(c).style.background='red';}
 	console.log(c);
 	console.log(tablero[c]);
 }
 
 function reset(){}
+function reglas(){}
 
 function barcos(){
-	addEvent
+	//agregar el onClick a los td para que manden su id separado.
+	//document.addEvent(onClick)
 }
 
 function go(){ 
